@@ -2,7 +2,7 @@
 - name: provision jekyll
   hosts: all
   remote_user: vagrant
-  sudo: yes
+  become: yes
   vars:
   roles:
     - role: ansible-nginx
