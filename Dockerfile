@@ -12,7 +12,7 @@ RUN apt-get update && \
 RUN mkdir -p /opt/ansible-playbooks/roles
 
 #Clone GitHub Repo
-RUN git clone https://github.com/mrlesmithjr/ansible-jekyll.git /opt/ansible-playbooks/roles/ansible-jekyll && \
+RUN git clone https://github.com/emanuelhouse/ansible-jekyll.git /opt/ansible-playbooks/roles/ansible-jekyll && \
     git clone https://github.com/mrlesmithjr/ansible-nginx.git /opt/ansible-playbooks/roles/ansible-nginx
 
 #Copy Ansible playbooks
