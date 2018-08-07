@@ -36,6 +36,6 @@
     state: present
     user_install: no
   with_subelements:
-    - jekyll_importers
+    - "{{ jekyll_importers | default([]) }}"
     - gems
   when: item.0 is defined
