@@ -1,8 +1,15 @@
 #Builds Ubuntu Jekyll image
 
-FROM mrlesmithjr/ubuntu-ansible
+FROM ubuntu:16.04
 
 MAINTAINER mrlesmithjr@gmail.com
+
+#Install Ansible
+RUN apt-get update && \
+    apt-get install --no-install-recommends -y software-properties-common && \
+    apt-add-repository ppa:ansible/ansible && \
+    apt-get update && \
+    apt-get install -y ansible sudo
 
 #Install packages
 RUN apt-get update && \
