@@ -15,8 +15,8 @@
     - libmysqlclient-dev
     - make
     - nodejs
-    - ruby2.2
-    - ruby2.2-dev
+    - ruby2.5
+    - ruby2.5-dev
     - zlib1g-dev
 
 - name: installing Ruby Gems
