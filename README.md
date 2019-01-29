@@ -30,6 +30,11 @@ docker run -d -p 80:80 -p 4000:4000 mrlesmithjr/jekyll
 Test-Site
 ---------
 In order to just test out Jekyll you can do the following either in Docker container or Vagrant Box.
+
+Get the container:
+````
+docker exec -it <container name> bash
+````
 ````
 cd ~
 jekyll new test-site
