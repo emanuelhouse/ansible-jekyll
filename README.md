@@ -35,7 +35,7 @@ cd ~
 jekyll new test-site
 cd test-site
 jekyll build
-sudo cp -R _site/* /usr/share/nginx/html
+sudo cp -R _site/* /var/www/html
 ````
 Using your browser:
 ###### Vagrant
