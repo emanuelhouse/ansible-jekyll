@@ -26,6 +26,7 @@
     user_install: no
 #  sudo: false
   with_items:
+    - bundler
     - jekyll
     - jekyll-import
     - github-pages
